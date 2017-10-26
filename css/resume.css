@@ -1,0 +1,391 @@
+/*******************************************
+FONTS
+*******************************************/
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);*/
+/*******************************************
+SETTINGS
+*******************************************/
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+/*******************************************
+BODY
+*******************************************/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', Arial, Tahoma;
+    font-weight: 400;
+    font-size: 14px;
+    color: #363636;
+    background: #ccc;
+}
+#main-area{
+
+}
+#top{
+    display: block;
+    height: 60px;
+    background: #000000;
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #fe5046;
+    -webkit-mask-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.9)), color-stop(40%, rgba(255, 255, 255, 1)),to(rgba(255, 255, 255, 0.5)));
+    /*mask-image: linear-gradient(180deg, transparent, white);*/
+
+}
+#back {
+    /*padding-right: 300px;*/
+    border-radius: 40%;
+    left:10px;
+    margin-top: 15px;
+
+}
+
+
+
+
+/*******************************************
+avatar header begin
+*******************************************/
+#info {
+    line-height: 40px;
+    display: block;
+    /*text-align: center;*/
+    padding-left: 580px;
+    padding-top: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #fe5046;
+    -webkit-mask-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.9)), color-stop(40%, rgba(255, 255, 255, 1)),to(rgba(255, 255, 255, 0.5)));
+    /*mask-image: linear-gradient(180deg, transparent, white);*/
+
+}
+#photo-area{
+    width: 1170px;
+    text-align: center;
+    margin: 0px auto 0px;
+    float: left;
+    display: block;
+}
+#avatar{
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    vertical-align: middle;
+    overflow: hidden;
+
+}
+#avatar-title{
+    background: white;
+    margin-top: -75px;
+}
+.divider{
+    height: 1px;
+    width: 1100px;
+    display: block;
+    background: white;
+    border-bottom: 2px outset #CCCCCC;
+}
+.content{
+    width: 1170px;
+    margin: 0px auto 5px;
+    background: white;
+
+}
+/*******************************************
+avatar header end
+*******************************************/
+
+
+
+
+/*******************************************
+part-left begin
+*******************************************/
+.part-left{
+    padding: 0px 25px 15px 25px;
+}
+.prompt{
+    color: #EC7263;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+#edu{
+    list-style: none;
+    position: relative;
+}
+#edu:before {
+    display: block;
+    width: 5px;
+    content: '';
+    height: 100%;
+    margin-left: 23px;
+    margiin-top: -25px;
+    background: #ec7263;
+    position: absolute;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(7%, #ec7263), color-stop(89%, #ec7263), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+
+}
+#edu li{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+.year {
+    width: 10%;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+
+}
+.edu-content{
+    float: left;
+    display: inline-block;
+    width: 90%;
+    background: #ccc;
+    position: relative;
+    padding: 8px 10px;
+    margin-top: -32px;
+}
+.edu-content:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:15px;
+    right: 0;
+    left: -16px;
+    border: 8px solid transparent;
+    border-right-color: #ccc;
+
+}
+
+.edu-content h2,.firm h2,.detail h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+
+}
+.exp-content{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.firm{
+    width: 20%;
+    display: inline-block;
+    float: left;
+}
+.detail{
+    width: 80%;
+    display: inline-block;
+    float: left;
+}
+/*******************************************
+part-left end
+*******************************************/
+
+
+/*******************************************
+part-right begin
+*******************************************/
+.contact-info{
+    list-style: none;
+
+}
+.info {
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.contact-info li{
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+
+}
+.contact-info .item{
+    width: 80%;
+    width: calc(100% - 55px);
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.9;
+    position: relative;
+
+}
+.contact-info   .small{
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: -4px;
+    margin-top: -3px;
+}
+.contact-info  .words{
+    width: 80%;
+    width: calc(100% - 55px);
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.9;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -1px;
+
+}
+
+
+.info .fa{
+    font-size:24px;
+    color: #ccc;
+}
+
+.myprogress{
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    margin: 5px 0 5px 0;
+    background: red;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.four-stage{
+    opacity: 0.7;
+    margin-top: 20px;
+}
+.four-stage:before{
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: #ccc;
+}
+.stage:before{
+    content: '';
+    width: 3px;
+    height: 10px;
+    background: #ccc;
+    display: block;
+    position: relative;
+    margin: auto;
+    /*这里设置了margin:auto就能实现伪类选择器的css样式神奇的margin布局了*/
+    /*auto：自适应，加入这个就不能设置float*/
+}
+.four-stage div{
+    float: left;
+    width: 25%;
+    display: inline-block;
+}
+
+.stage-left.stage:before{
+    margin-left: 0;
+}
+.stage-right.stage:before{
+    margin-right: 0;
+}
+.stage-left:nth-child(2) span{
+    margin-left: -22px;
+}
+.stage-right:nth-child(3) span{
+    margin-right: -22px;
+}
+.stage-right{
+    text-align: right;
+}
+.lauguage{
+    margin-top: 20px;
+}
+.Polish{
+    width: 100%;
+     height: 30px;
+    display: block;
+    border-bottom: 1px solid #ccc ;
+    opacity: 0.7;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.English {
+    width: 100%;
+    height: 30px;
+    display: block;
+    border-bottom: 1px solid #ccc ;
+    opacity: 0.7;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.mystar{
+    color: red;
+    font-size: 18px;
+}
+.not-star{
+    color: #979797;
+    font-size: 18px;
+}
+.hob1{
+    color: whitesmoke;
+    background: #a65265;
+    display: inline-block;
+    font-size: 15px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 3px;
+    margin-left: 3px;
+}
+.hob1 span{
+    padding-top: 5px;
+}
+/*******************************************
+part-right end
+*******************************************/
+
+
+/*******************************************
+MEDIA
+*******************************************/
+@media (min-width: 500px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
