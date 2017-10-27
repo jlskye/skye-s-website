@@ -24,6 +24,7 @@ body {
     font-size: 14px;
     color: #363636;
     background: #ccc;
+    overflow-x: hidden;
 }
 #main-area{
 
@@ -49,8 +50,9 @@ body {
     position: absolute;
     width: 50px;
     left:3px;
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
+    padding-left: 6px;
 
 }
 
@@ -83,18 +85,19 @@ avatar header begin
     overflow: hidden;
     display: block;
 }
-#avatar{
+#avatar img{
     width: 155px;
     height: 155px;
     border-radius: 50%;
     border: 4px solid #ccc;
-    vertical-align: middle;
     overflow: hidden;
+    z-index: 2000;
 
 }
 #avatar-title{
     background: white;
     margin-top: -75px;
+    z-index: 2;
 }
 .divider{
     height: 1px;
@@ -175,10 +178,14 @@ part-left begin
     float: left;
     display: inline-block;
     width: 90%;
-    background: #ccc;
+    background:  -webkit-gradient(linear,  100% 0 ,0 0, from(#eee), to(#aaa));
     position: relative;
+
     padding: 8px 10px;
-    margin-top: -32px;
+    /*padding:15px 10px 15px 15px;*/
+    margin-top: -36px;
+    /*margin-bottom: 10px;*/
+
 }
 .edu-content:after{
     content: '';
@@ -233,6 +240,7 @@ part-right begin
     float: left;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    /*padding-top: 5px;*/
 }
 .contact-info li{
     width: 100%;
@@ -253,8 +261,9 @@ part-right begin
 .contact-info   .small{
     font-size: 14px;
     font-weight: 100;
-    margin-bottom: -4px;
-    margin-top: -3px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+    vertical-align: bottom;
 }
 .contact-info  .words{
     width: 80%;
@@ -263,8 +272,8 @@ part-right begin
     font-weight: 700;
     opacity: 0.9;
     position: relative;
-    margin-top: -10px;
-    margin-bottom: -1px;
+    /*margin-top: -10px;*/
+    margin-bottom: 10px;
 
 }
 
@@ -279,7 +288,7 @@ part-right begin
     color: white;
     font-size: 20px;
     margin: 5px 0 5px 0;
-    background: red;
+    background: #fe5046;
     text-overflow: ellipsis;
     white-space: nowrap;
     vertical-align: middle;
@@ -387,7 +396,39 @@ part-right end
 /*******************************************
 MEDIA
 *******************************************/
-@media (min-width: 500px) {
+@media (min-width: 550px) {
+    #avatar-title h1{
+        font-size: 18px;
+
+    }
+    #avatar-title span{
+        font-size: 14px;
+    }
+    .edu-content:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top:28px;
+        right: 0px;
+        left: -16px;
+        border: 8px solid transparent;
+        border-right-color: #ccc;
+        overflow: hidden;
+
+    }
+    /*.edu-content{*/
+        /*float: left;*/
+        /*display: inline-block;*/
+        /*width: 90%;*/
+        /*background: #ccc;*/
+        /*position: relative;*/
+        /*padding: 8px 10px;*/
+        /*!*padding:15px 10px 15px 15px;*!*/
+        /*margin-top: -36px;*/
+        /*!*margin-bottom: 10px;*!*/
+
+    /*}*/
 
 }
 @media (min-width: 768px) {
@@ -395,10 +436,43 @@ MEDIA
        font-weight: 400;
        font-size: 15px;
    }
+    .edu-content:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top:15px;
+        right: 0;
+        left: -16px;
+        border: 8px solid transparent;
+        border-right-color: #ccc;
+        overflow: hidden;
+
+    }
+
 }
 @media (min-width: 992px) {
 
 }
 @media (min-width: 1200px) {
+    #avatar-title span{
+        font-size: 24px;
+    }
+    #avatar-title h1{
+        font-size: 24px;
+
+    }
+    /*.edu-content:after{*/
+        /*content: '';*/
+        /*position: absolute;*/
+        /*width: 0;*/
+        /*height: 0;*/
+        /*top:15px;*/
+        /*right: 0;*/
+        /*left: -16px;*/
+        /*border: 8px solid transparent;*/
+        /*border-right-color: #ccc;*/
+
+    /*}*/
 
 }

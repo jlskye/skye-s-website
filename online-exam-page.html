@@ -16,6 +16,7 @@
         }
         #header{
             width: 500px;
+            overflow: hidden;
             padding-bottom: 150px;
         }
         .myForm{
@@ -45,6 +46,43 @@
             display: block;
             margin-top: 100px;
             margin-left: 0px;
+        }
+        @media (min-width:400px) {
+            #header{
+                width: 400px;
+                overflow: hidden;
+                padding-bottom: 30px;
+
+            }
+            .textInput{
+                width: 60px;
+                border-radius: 5px;
+            }
+            .myForm{
+                font-family: '华文宋体' ;font-size: 24px;
+                color: #0f0f0f;font-weight: 700;
+            }
+        }
+        @media (min-width: 768px) {
+
+        }
+        @media (min-width: 992px) {
+
+        }
+        @media (min-width: 1200px) {
+            #header{
+                width: 500px;
+                overflow: hidden;
+                padding-bottom: 30px;
+            }
+            .myForm{
+                font-family: '华文宋体' ;font-size: 32px;
+                color: #0f0f0f;font-weight: 800;
+            }
+            .textInput{
+                width: 100px;
+                border-radius: 5px;
+            }
         }
     </style>
 </head>
