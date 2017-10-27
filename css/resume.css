@@ -27,9 +27,11 @@ body {
     /*overflow-x: hidden;*/
 }
 #main-area{
-
+    width: 100%;
+    overflow: hidden;
 }
 #top{
+    width: 100%;
     display: block;
     height: 60px;
     background: #000000;
@@ -404,7 +406,10 @@ part-right end
 /*******************************************
 MEDIA
 *******************************************/
-@media (min-width: 550px) {
+@media (min-width: 500px) {
+    body{
+        min-width:500px;
+    }
     #avatar-title h1{
         font-size: 18px;
 
